@@ -16,6 +16,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.ch06.home.HomeRoute
+import profile.ProfileScreen
 
 @Composable
 fun MainScreen() {

@@ -1,4 +1,4 @@
-package com.example.ch06
+package profile
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -42,26 +42,26 @@ fun ProfileScreen() {
         topBar = { TopAppBar(title = { Text("Profil") }) }
     ) { padding ->
         Column(
-            modifier             = Modifier
+            modifier = Modifier
                 .padding(padding)
                 .fillMaxSize()
                 .padding(24.dp),
-            horizontalAlignment  = Alignment.CenterHorizontally,
-            verticalArrangement  = Arrangement.Center
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
         ) {
             Icon(
-                imageVector        = Icons.Filled.AccountCircle,
+                imageVector = Icons.Filled.AccountCircle,
                 contentDescription = null,
-                modifier           = Modifier.size(96.dp),
-                tint               = MaterialTheme.colorScheme.primary
+                modifier = Modifier.size(96.dp),
+                tint = MaterialTheme.colorScheme.primary
             )
             Spacer(Modifier.height(16.dp))
             Text(
-                text  = "Mahasiswa Android",
+                text = "Mahasiswa Android",
                 style = MaterialTheme.typography.titleLarge
             )
             Text(
-                text  = "mahasiswa@kampus.ac.id",
+                text = "mahasiswa@kampus.ac.id",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
